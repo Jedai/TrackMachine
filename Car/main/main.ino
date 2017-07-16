@@ -4,17 +4,19 @@ Car car;
 
 void setup() 
 {
-     car.Initialize();
+    car.Initialize();
 }
 
 void loop() 
 {
     if(car.IsAutopilotActive())
     {
-          car.MoveForward(0);      
+        car.MoveForward(100);   
+        car.StopCar();  
+        delay(100); 
     }
     else
     {
-          // process commands from manual control      
+        // process commands from manual control      
     }
 }

@@ -23,7 +23,13 @@ public:
 
     void Initialize(DWORD);
 
-    DWORD Locked();
+    BOOL IsLocked();
+    void Lock();
+    void Unlock();
+
+    void GoForward(DWORD);
+    void GoBackward(DWORD);
+    void Stop();
 };
 
 #endif
